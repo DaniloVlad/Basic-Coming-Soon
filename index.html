@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming Soon...</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/bde86c27f2.js"></script>
+</head>
+<body id="body">
+  <div id="nav" class="menu">
+     <div class="header">
+         <span id="brand">Skept.io</span>
+     </div>
+      
+      <ul>
+          <a href="#"><li>Home</li></a>
+          <a  data-toggle="modal" data-target="#Info" href="#"><li>Info</li></a>
+      </ul>
+  </div>
+   
+    <div class="container" id="time">
+         <div id="mNav">
+            <button id="mbtn" class="btn btn-lg btn-default trans">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+        </div>
+       <p id="cs">Coming Soon...</p>
+       <div class="content">
+           <p id="skept">
+               <span id="word"></span><!--
+            --><span id="blinker">&#124;</span>
+           </p>
+        </div>
+       
+        <div class="row" >
+            <div class="col-md-3">
+                <span class="numbers" id="days"></span>
+                <p id="d"></p>
+            </div>
+            <div class="col-md-3">
+                <span class="numbers" id="hours"></span>
+                <p id="h"></p>
+            </div>
+            <div class="col-md-3">
+                <span class="numbers" id="minutes"></span>
+                <p id="m"></p>
+            </div>
+            <div class="col-md-3">
+                <span class="numbers" id="seconds"></span>
+                <p id="s"></p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">What is Skept.io?</h4>
+                </div>
+            <div class="modal-body">
+                <p class="mBody">
+                   Simply, Skept is a blog. It's currently under development and will be launching soon. Created by an average guy containing above average content. Here we discuss ideas, not gossip or celebrity bs. 
+                Sounds like your cup of tea? <br>
+                <b>Sign up to weekly updates!</b>
+                </p>
+                
+                <div class="input-group input-group-lg">
+                    <input id="email" type="email" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                        <button id="signUp" class="btn btn-primary" type="button">Submit!</button>
+                    </span>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+</html>
