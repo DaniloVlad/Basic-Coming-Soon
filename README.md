@@ -5,7 +5,7 @@ A very basic coming soon page. Backend code will be uploaded soon.
 
 ##Tutorials
 
-####Changing Date:
+###Changing Date:
 
 Using the coming soon page is very easy. Open the `timer.js` file.
 
@@ -15,16 +15,16 @@ var comingDate = new Date("September 1, 2016, 23:59:00");
 ```
 Change the date to whatever you need to.
 
-####Change Modal
+###Change Modal
 
 Find the the paragraph tag that reads `<p class="mBody">`.
 Change the body text as needed.
 
-####Change background Image
+###Change background Image
 
 Simply change the image marked bg.jpg in the img directory. 
 
-####Change Words Getting 'typed'
+###Change Words Getting 'typed'
 
 Once again in `timer.js` find the following:
 ```javascript
