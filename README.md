@@ -28,7 +28,7 @@ Simply change the image marked bg.jpg in the img directory.
 
 Once again in `timer.js` find the following:
 ```javascript
-var meow = ["Skept","Speach", "Knowledge", "Ethics", "Philosophy"];
+var wordList = ["Skept","Speach", "Knowledge", "Ethics", "Philosophy"];
 ```
 Change as needed. 
 
