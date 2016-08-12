@@ -11,10 +11,10 @@ function getRandomInt(min, max) {
 var hit = setInterval(
 function changeText(callback){
     
-    var meow = ["Skept","Speach", "Knowledge", "Ethics", "Philosophy"];
+    var wordList = ["Skept","Speach", "Knowledge", "Ethics", "Philosophy"];
     var current = $("#word").html();
     //console.log(current);
-    var index = meow[(meow.indexOf(current) +1)%5]; //when it gets to 5 goes to 0
+    var index = wordList[(wordList.indexOf(current) +1)%5]; //when it gets to 5 goes to 0
     var ight = setInterval(function(){
                     current = current.substring(0, current.length-1);
                     $("#word").html(current);
