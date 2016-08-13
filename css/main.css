@@ -36,9 +36,29 @@ html, body{
     height: 2em;
   
 }
+@-webkit-keyframes blink{
+    0%{opacity: 1;}
+    33%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    33%{opacity: 0;}
+    100%{opacity: 0;}
+}
 #blinker{
     top: -2px;
+    opacity: 1;
     position: relative;
+    animation-name: blink;
+    animation-duration: 30ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    -webkit-animation-name:blink;
+    -webkit-animation-duration: 750ms;
+    
+    -webkit-animation-iteration-count: infinite;
 }
 
 #mNav {
@@ -112,3 +132,5 @@ ul a:hover {
     text-align: center;
     padding: 15px 25px;
 }
+
+

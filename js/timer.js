@@ -1,7 +1,7 @@
 var comingDate = new Date("September 1, 2016, 23:59:00");
 update();
 
-setTimeout(blink,600);
+//setTimeout(blink,600);
 setTimeout(still("Skept"),500);
     
     
@@ -67,11 +67,11 @@ function update(){
     setTimeout(update,1000);
 }
 
-function blink(){
-    var op = $("#blinker").css("opacity");
-    $("#blinker").animate({opacity: ((op==1)? 0:1)},30,'linear');
-    setTimeout(blink,600);
-}   
+//function blink(){
+//    var op = $("#blinker").css("opacity");
+//    $("#blinker").animate({opacity: ((op==1)? 0:1)},30,'linear');
+//    setTimeout(blink,600);
+//}   
 
 
 
