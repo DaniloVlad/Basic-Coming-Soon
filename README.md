@@ -1,19 +1,19 @@
-# Basic Coming Soon Page
+# Coming Soon Template
 
 
-A very basic coming soon page. Backend code will be uploaded soon. 
+A simple coming soon template. Made using HTML/CSS/Js!
 
 ##Tutorials
 
 ###Changing Date:
 
-Using the coming soon page is very easy. Open the `timer.js` file.
+To use the coming soon template. Open the `timer.js` file.
 
 Find the code that says
 ```javascript
 var comingDate = new Date("September 1, 2016, 23:59:00");
 ```
-Change the date to whatever you need to.
+And modify it as needed.
 
 ###Change Modal
 
