@@ -54,17 +54,30 @@ function update(){
     var hours = Math.floor((milisecondsToDate/(3600000))%24);
     var minutes = Math.floor((milisecondsToDate/(1000*60))%60);
     var seconds = Math.floor((milisecondsToDate/(1000))%60);
+    if(currentDate < comingDate){
+        $("#d").html(((days==1) ? "Day" : "Days"));
+        $("#h").html(((hours==1) ? "Hour" : "Hours"));
+        $("#m").html(((minutes==1) ? "Minute" : "Minutes"));
+        $("#s").html(((seconds==1) ? "Second" : "Seconds"));
+
+        $("#days").html(((days<10)? "0"+days : days));
+        $("#hours").html(((hours<10)? "0"+hours : hours));
+        $("#minutes").html(((minutes<10)? "0"+minutes : minutes));
+        $("#seconds").html(((seconds<10)? "0"+seconds : seconds));
+        setTimeout(update,1000);
+    } else{
+        $("#d").html("Days");
+        $("#h").html("Hours");
+        $("#m").html("Minutes");
+        $("#s").html("Seconds");
+
+        $("#days").html("00");
+        $("#hours").html("00");
+        $("#minutes").html("00");
+        $("#seconds").html("00");
+        
+    }
     
-    $("#d").html(((days==1) ? "Day" : "Days"));
-    $("#h").html(((hours==1) ? "Hour" : "Hours"));
-    $("#m").html(((minutes==1) ? "Minute" : "Minutes"));
-    $("#s").html(((seconds==1) ? "Second" : "Seconds"));
-    
-    $("#days").html(((days<10)? "0"+days : days));
-    $("#hours").html(((hours<10)? "0"+hours : hours));
-    $("#minutes").html(((minutes<10)? "0"+minutes : minutes));
-    $("#seconds").html(((seconds<10)? "0"+seconds : seconds));
-    setTimeout(update,1000);
 }
 
 //function blink(){
