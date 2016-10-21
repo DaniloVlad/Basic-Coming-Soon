@@ -1,4 +1,4 @@
-var comingDate = new Date("September 1, 2016, 23:59:00");
+var comingDate = new Date();
 comingDate.setMonth((comingDate.getMonth() < 12 ? comingDate.getMonth()+1 : 1))
 update();
 
