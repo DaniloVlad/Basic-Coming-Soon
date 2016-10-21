@@ -1,6 +1,6 @@
 var comingDate = new Date();
 comingDate.setMonth((comingDate.getMonth() < 12 ? comingDate.getMonth()+1 : 1));
-comingDate.setDay(Math.round((Math.random()*30+1))); //random day
+comingDate.setHours(Math.round((Math.random()*30+1))); //random hours to appeal to the eye
 update();
 
 //setTimeout(blink,600);
