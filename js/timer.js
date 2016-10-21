@@ -1,4 +1,4 @@
-var comingDate = new Date("September 1, 2016, 23:59:00");
+var comingDate = new Date();
 update();
 
 //setTimeout(blink,600);
@@ -75,19 +75,9 @@ function update(){
         $("#hours").html("00");
         $("#minutes").html("00");
         $("#seconds").html("00");
-        
     }
     
 }
-
-//function blink(){
-//    var op = $("#blinker").css("opacity");
-//    $("#blinker").animate({opacity: ((op==1)? 0:1)},30,'linear');
-//    setTimeout(blink,600);
-//}   
-
-
-
 //DOM
 $("#mbtn").click(function() { 
     var l = $("#nav").css("left");
