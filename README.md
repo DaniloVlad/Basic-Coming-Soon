@@ -3,6 +3,7 @@
 
 A simple coming soon template. Made using HTML/CSS/Js!
 
+Check it out: [Here](https://danilovlad.github.io/Coming-Soon-Template/)
 ##Tutorials
 
 ###Changing Date:
