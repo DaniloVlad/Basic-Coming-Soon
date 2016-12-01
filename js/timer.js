@@ -109,11 +109,11 @@ $('body').click(function(){
 
 $("#signUp").click(function() {
     $(this).html('<i class="fa fa-spinner fa-pulse" aria-hidden="true"></i>');
+    alert($("#email").val())
     $.ajax({
-        url: "email.php",
+        url: "/email",
         data: {email: $("#email").val()},
         type: "POST",
-        dataType: "html",
         success: function(){
             $(this).html('Submit');
             alert("YAY");
