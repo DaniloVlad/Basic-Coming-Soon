@@ -1,4 +1,6 @@
 var comingDate = new Date();
+comingDate.setMonth((comingDate.getMonth() < 12 ? comingDate.getMonth()+1 : 1));
+comingDate.setHours(Math.round((Math.random()*30+1))); //random hours to appeal to the eye
 update();
 
 //setTimeout(blink,600);
@@ -75,9 +77,19 @@ function update(){
         $("#hours").html("00");
         $("#minutes").html("00");
         $("#seconds").html("00");
+        
     }
     
 }
+
+//function blink(){
+//    var op = $("#blinker").css("opacity");
+//    $("#blinker").animate({opacity: ((op==1)? 0:1)},30,'linear');
+//    setTimeout(blink,600);
+//}   
+
+
+
 //DOM
 $("#mbtn").click(function() { 
     var l = $("#nav").css("left");
